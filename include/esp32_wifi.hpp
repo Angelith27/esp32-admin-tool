@@ -11,8 +11,6 @@ int wifi_mode = WIFI_STA;
 unsigned long previousMillisWIFI = 0;
 unsigned long intervalWIFI = 30000;
 
-
-
 //url http://admincivicbot.local
 const char *esp_hostname= id;
 void startAP(){

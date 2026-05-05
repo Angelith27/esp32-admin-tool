@@ -31,4 +31,16 @@ int     ap_canalap;            // Canal AP
 int     ap_hiddenap;           // Es visible o no el AP (0 - Visible 1 - Oculto)
 int     ap_connetap;           // Número de conexiones en el AP
 
-uint8_t ip[4];
+// Zona configuración MQTT 
+boolean mqtt_enable;                // Habilitar MQTT Broker
+char    mqtt_user[30];              // Usuario MQTT Broker 
+char    mqtt_id[30];                // ID MQTT Broker       
+char    mqtt_passw[30];             // Password MQTT Broker 
+char    mqtt_server[39];            // Servidor del MQTT Broker
+int     mqtt_port;                  // Puerto servidor MQTT Broker
+int     mqtt_time;                  // Tiempo de envio por MQTT
+
+uint8_t ip[4];                      // Variable función convertir string a IP 
+float   temp_cpu;                   // Temperatura del CPU en °C
+
+bool Relay01_status, Relay02_status;
